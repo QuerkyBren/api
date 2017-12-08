@@ -171,7 +171,8 @@ app.get('/auth/clear', function(req, res) {
 var wGuildOfficers = ['humantus', 'akohos'];
 
 // Constants
-var DAILY_RATE_CAP = 5;
+var DAILY_RATE_CAP;
+DAILY_RATE_CAP = winter_pass ? 10 : 5
 var STARTING_POINTS = 2500;
 var POINTS_FLOOR = 1;
 var POINTS_CAP = 10000;
